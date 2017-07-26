@@ -19,6 +19,7 @@
 		B259DC771F28442F007208AF /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = B259DC701F28442E007208AF /* GFGeoHash.m */; };
 		B259DC781F28442F007208AF /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B259DC721F28442E007208AF /* GFGeoHashQuery.m */; };
 		B259DC791F28442F007208AF /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B259DC741F28442E007208AF /* GFQuery.m */; };
+		B259DC7E1F284997007208AF /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B259DC7D1F284997007208AF /* PokeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		B259DC731F28442E007208AF /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		B259DC741F28442E007208AF /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		B259DC7A1F2844F1007208AF /* PokeFind-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokeFind-Bridging-Header.h"; sourceTree = "<group>"; };
+		B259DC7D1F284997007208AF /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,10 @@
 		B259DC4E1F2813E3007208AF /* PokeFind */ = {
 			isa = PBXGroup;
 			children = (
+				B259DC7C1F28496F007208AF /* Model */,
+				B259DC7B1F28496B007208AF /* Controller */,
 				B259DC631F28442E007208AF /* GeoFire */,
 				B259DC4F1F2813E3007208AF /* AppDelegate.swift */,
-				B259DC511F2813E3007208AF /* ViewController.swift */,
 				B259DC531F2813E3007208AF /* Main.storyboard */,
 				B259DC561F2813E3007208AF /* Assets.xcassets */,
 				B259DC581F2813E3007208AF /* LaunchScreen.storyboard */,
@@ -150,6 +153,22 @@
 				B259DC741F28442E007208AF /* GFQuery.m */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		B259DC7B1F28496B007208AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B259DC511F2813E3007208AF /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B259DC7C1F28496F007208AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B259DC7D1F284997007208AF /* PokeAnnotation.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B259DC761F28442F007208AF /* GFBase32Utils.m in Sources */,
+				B259DC7E1F284997007208AF /* PokeAnnotation.swift in Sources */,
 				B259DC521F2813E3007208AF /* ViewController.swift in Sources */,
 				B259DC771F28442F007208AF /* GFGeoHash.m in Sources */,
 				B259DC501F2813E3007208AF /* AppDelegate.swift in Sources */,
