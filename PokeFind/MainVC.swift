@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  PokeFind
 //
 //  Created by Saul Rivera on 7/25/17.
@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import FirebaseDatabase
 
-class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
